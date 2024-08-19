@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --orange: hsl(25, 97%, 73%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    background-color: var(--veryDarkBlue);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: var(--darkBlue);
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+#container img {
+    margin: 40px 30px;
+}
+
+#container #title {
+    flex-wrap: wrap;
+    margin: 20px 30px 10px;
+    color: var(--white);
+    font-family: 'Overpass', sans-serif, serif;
+}
+
+#container #paragraph {
+    flex-wrap: wrap;
+    margin: 10px 30px;
+    color: var(--lightGrey);
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif, serif;
+}
+
+.rating {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.rating input[type="radio"] {
+    display: none;
+}
+
+.rating label {
+    background-color: #2c2c2e;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.rating input[type="radio"]:checked + label {
+    background-color: #fb7413;
+    color: white;
+}
+
+#container #submit {
+    width: 440px;
+    height: 40px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#container #submit:hover {
+    background-color: var(--orange);
+}
+
+#containernew {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: var(--darkBlue);
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+#containernew img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+#containernew span {
+    text-align: center;
+    color: var(--orange);
+    margin-top: 20px;
+    font-family: 'Overpass', sans-serif, serif;
+    font-size: 15px;
+}
+
+#containernew #new-title {
+    flex-wrap: wrap;
+    margin: 20px 30px 10px;
+    color: var(--white);
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Overpass', sans-serif, serif;
+}
+
+#containernew p {
+    flex-wrap: wrap;
+    margin: 10px 30px;
+    margin-top: 20px;
+    color: var(--lightGrey);
+    text-align: center;
+    font-family: 'Overpass', sans-serif, serif;
+    font-size: 15px;
+}
